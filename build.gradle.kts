@@ -12,12 +12,16 @@ hivemqExtension {
     author = "HiveMQ"
     priority = 1000
     startPriority = 1000
-    mainClass = "$group.helloworld.HelloWorldMain"
+    mainClass = "$group.failauth.HelloWorldMain"
     sdkVersion = "$version"
 
     resources {
         from("LICENSE")
     }
+}
+
+dependencies {
+    compileOnly(libs.jetbrains.annotations)
 }
 
 @Suppress("UnstableApiUsage")
